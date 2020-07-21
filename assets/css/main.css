@@ -1,0 +1,183 @@
+body {
+    font-family: "Montserrat";
+  }
+  
+  h1 {
+      font-family: "Montserrat-Black";
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 1.5;
+  }
+  
+  h2 {
+    font-family: "Montserrat-Bold";
+    font-weight: bold;
+    font-size: 3rem;
+  }
+  
+  h3 {
+    font-family: "Montserrat-Bold";
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  /* Navigation Bar */
+  .navbar{
+      background-color: transparent;
+  }
+
+  .navbar-brand {
+    font-family: "Ubuntu";
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #ffb010 !important;
+    margin-left: 80px;
+  }
+
+  .navbar-nav {
+    margin-right: 80px;
+  }
+  
+  .nav-item {
+    padding: 0 18px;
+    text-align: right !important;
+  }
+
+  .nav-link:hover{
+    color: #ffb010 !important;
+  }
+  
+  .nav-link {
+    font-size: 1.1rem;  
+  }
+
+  .navbar-toggler{
+      border: none;
+  }
+
+  .navbar-nav .active .nav-link{
+      color: #ffb010 !important;
+  }
+
+  .brand-logo{
+    border-radius: 5px;
+  }
+
+
+  body {
+    padding: 12em 0 10em 0 ;
+    background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/banner.jpg");
+    background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/banner.jpg");
+    background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/banner.jpg");
+    background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/banner.jpg");
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    height: 100vh;
+}
+
+/* Banner */
+
+#banner{
+  height: 100vh;
+}
+
+.inner{
+  padding-top: 7% !important;
+  text-align: center;
+  color: #ffb010;
+}
+
+#brand-name {
+  
+  visibility: hidden;
+}
+
+  
+/*About */
+#about-us{
+  background-color: whitesmoke;  
+}
+
+.card {
+  border-top: none;
+}
+
+.card-body {
+  padding-top: 0;
+}
+
+.card-img-block {
+  width: 91%;
+  margin: 0 auto;
+  position: relative;
+  top: -20px;
+}
+
+.card-img-top {
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.63);
+}
+
+.card-title {
+  top: -20px
+}
+
+/*Service */
+#service{
+  background-color: #2e3842 ;
+  color: white;
+}
+
+.service-row{
+  margin-top: 5%;
+}
+
+.service-head {
+  font: 25px/28px circularstd-bold,sans-serif;
+  letter-spacing: .5px;
+  text-transform: capitalize;
+}
+
+.service-content {
+  font: 20px/28px avenirnextLTpro-regular,sans-serif;
+  letter-spacing: .5px;
+  margin-bottom: 20px
+}
+
+.service-img{
+  height: 250px;
+  width: 100%;
+}
+
+/*Product*/
+#product{
+  background-color: whitesmoke;
+}
+.carousel-item{
+  size: 50%;
+}
+
+.cover {
+  object-fit: cover !important;  
+}
+
+/* Contact-us */
+#contact-us{
+  background-color: transparent;
+  color: white;
+}
+
+
+/* Footer*/
+#footer{
+  background-color: transparent;
+  color: white;
+}
+@media (max-width: 992px){
+  #third, #fourth{
+    padding-top: 50px !important;
+  }
+}
