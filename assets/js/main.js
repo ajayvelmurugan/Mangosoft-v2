@@ -1,3 +1,28 @@
+$(document).ready(function() {
+    $('#navScroll').addClass('hide');
+	setTimeout(function(){
+		$('body').addClass('loaded');
+        $('h1').css('color','#222222');
+    }, 1500);  
+
+    setTimeout(function(){
+        $('#navScroll').removeClass('hide');
+    }, 1800);
+});
+
+$(document).ready(function () {
+    $(".trigger_popup_fricc").click(function(){
+       $('.hover_bkgr_fricc').show();
+    });
+    $('.hover_bkgr_fricc').click(function(){
+        $('.hover_bkgr_fricc').hide();
+    });
+    $('.popupCloseButton').click(function(){
+        $('.hover_bkgr_fricc').hide();
+    });
+});
+
+
 $(document).scroll(function(){
 var theTop = $('html').scrollTop();
 if (theTop == 0) {
@@ -65,9 +90,11 @@ $(document).scroll(function(){
 
 $('.card').hover(
         function(e){
-        $( this ).find(".profile-img").css({"opacity":0.6, 'background-color': 'black'});
+        $(this).find(".profile-img").css({"opacity":0, 'background-color': 'black',  'transform':'rotateY(180deg)'});
+        $(this).find(".card-img-content").css({"opacity":1});
     },
     function(e){
-        $( this ).find(".profile-img").css({"opacity":1});
+        $( this ).find(".profile-img").css({"opacity":1, 'transform':'rotateY(0deg)'});
+        $(this).find(".card-img-content").css({"opacity":0});
     }
 );
