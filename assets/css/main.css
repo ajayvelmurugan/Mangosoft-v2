@@ -2,6 +2,34 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  font-family: "Montserrat";
+}
+
+h1 {
+    font-family: "Montserrat-Black";
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+h2 {
+  font-weight: 800;
+  font-family: 'Red Rose', cursive;
+  letter-spacing: .225em;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: 'Rowdies', cursive;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+p{
+  font-family: 'Roboto', sans-serif;
+}
 .chromeframe {
   margin: 0.2em 0;
   background: #ccc;
@@ -162,31 +190,6 @@ html {
   }  
 
 
-  body {
-    font-family: "Montserrat";
-  }
-  
-  h1 {
-      font-family: "Montserrat-Black";
-    font-weight: bold;
-    font-size: 3rem;
-    line-height: 1.5;
-  }
-  
-  h2 {
-    font-weight: 800;
-    font-family: 'Red Rose', cursive;
-    letter-spacing: .225em;
-    line-height: 1em;
-    text-transform: uppercase;
-  }
-  
-  h3 {
-    font-family: 'Roboto Mono', monospace;
-    font-weight: bold;
-    font-size: 2rem;
-  }
-
   /* Navigation Bar */
   .navbar{
       background-color: transparent;
@@ -317,6 +320,7 @@ html {
     }
 
   #banner p {
+    padding-top: 13px;
     letter-spacing: 0.225em;
     text-transform: uppercase;
   }
@@ -486,6 +490,23 @@ body.is-preload #banner:after {
   Top: 100px;
 }
 
+.echo {
+  margin-top: 10%;
+}
+
+.aw-circle-icon{
+  display: inline-block;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  padding: 25px 30px;
+  margin: 0 auto;
+}
+
+.design-icon{
+  color: white;
+}
+
 #about-us .card-title {
   top: -20px
 }
@@ -503,18 +524,27 @@ body.is-preload #banner:after {
 .service-head {
   font-family: 'Josefin Sans', sans-serif;
   letter-spacing: .5px;
+  font-weight: 800;
   text-transform: capitalize;
+  text-align: left;
 }
 
 .service-content {
   font-size: 18px;
   letter-spacing: .5px;
-  margin-bottom: 20px
+  margin-bottom: 20px;
+  text-align: left;
+
 }
 
 .service-img{
   height: 250px;
   width: 100%;
+}
+
+.service-list {
+  text-align: left;
+  margin-bottom: 3px;
 }
 
 /*Product*/
@@ -525,9 +555,19 @@ body.is-preload #banner:after {
   size: 50%;
 }
 
+#product .chat{
+  background-color: beige;
+}
+
+#product .chat-quote1{
+  color: #e3022f;
+  font-weight: 700;
+}
+
 #product .card-title{
   font-family: 'Josefin Sans', sans-serif;
   font-size: 1.5rem;
+  font-weight: 800;
   padding-top: 30px;
 }
 
@@ -551,14 +591,15 @@ body.is-preload #banner:after {
 }
 
 #contact-us .fa-envelope{
-  color:#2e3842;
+  padding-left: 0;
+  color:#3477eb;
 }
 #contact-us .fa-envelope:hover{
   color: white;
 }
 
 #contact-us .fa-phone-square-alt{
-  color:#2e3842;
+  color:#3477eb;
 }
 
 #contact-us .fa-phone-square-alt:hover{
@@ -566,7 +607,7 @@ body.is-preload #banner:after {
 }
 
 #contact-us .fa-linkedin{
-  color:  #2e3842;
+  color:  #3477eb;
 }
 
 #contact-us .fa-linkedin:hover{
@@ -618,7 +659,12 @@ body.is-preload #banner:after {
 }
 
 @media (max-width: 992px){
-  #third, #fourth{
+ 
+  #banner p {
+    font-size: 0.7rem;
+  }
+
+  #first, #second, #third, #fourth{
     padding-top: 50px !important;
   }
 
@@ -637,6 +683,53 @@ body.is-preload #banner:after {
 
   #product .card-img{
     height: auto;
+  }
+
+  .service-row{
+    margin-top: 10%;
+  }
+
+  .service-head{
+    text-align: center;
+  }
+
+  .service-content{
+    font-size: 1 rem;
+    text-align: center;
+  }
+
+
+  .service-img{
+    height: 200px;
+    width: 70%;
+  }
+  
+
+  #coming-soon{
+    margin-top: 48px !important;
+  }
+
+  #about-us .card{
+    width: 80%;
+  }
+  
+}
+
+@media (max-width: 574px){
+
+  h3{
+    font-size: 1.5rem;
+  }
+  .service-list{
+    display: none;
+  }
+  #about-us .card{
+    width: 80%;
+    margin-left: 40px;
+  }
+
+  .design-icon{
+    font-size: 1rem !important;
   }
   
 }

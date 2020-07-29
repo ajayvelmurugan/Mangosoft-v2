@@ -3,25 +3,18 @@ $(document).ready(function() {
 	setTimeout(function(){
 		$('body').addClass('loaded');
         $('h1').css('color','#222222');
-    }, 1500);  
+    }, 100); //1500  
 
     setTimeout(function(){
         $('#navScroll').removeClass('hide');
-    }, 1800);
-});
+    }, 200); //1800
 
-$(document).ready(function () {
-    $(".trigger_popup_fricc").click(function(){
-       $('.hover_bkgr_fricc').show();
-    });
-    $('.hover_bkgr_fricc').click(function(){
-        $('.hover_bkgr_fricc').hide();
-    });
-    $('.popupCloseButton').click(function(){
-        $('.hover_bkgr_fricc').hide();
+    $('.nav-item').click(function(e){
+        $('.nav-item').removeClass("active");
+        $(this).addClass("active");
+        $(this).data('clicked',true);
     });
 });
-
 
 $(document).scroll(function(){
 var theTop = $('html').scrollTop();
@@ -37,7 +30,6 @@ if (theTop == 0) {
        
     }
 
-    banner = banner *2;
     if(theTop > banner){
         $("#navScroll").addClass("bg-dark")
     }else{
@@ -46,7 +38,8 @@ if (theTop == 0) {
 }
 });
 
-$(document).scroll(function(){
+if(!$('.nav-item').data('clicked')){
+/*$(document).scroll(function(){
     var theTop = $('body').scrollTop();
     var banner = $("#banner").prop("scrollHeight");
     var about = $("#about-us").prop("scrollHeight");
@@ -56,7 +49,8 @@ $(document).scroll(function(){
     product = product + banner;
     service = service + product;
     about = about + service;
-    about = about - 100;
+    about = about - 200;
+
     if(theTop < banner){
         $("#nav-first").addClass("active");
     }else{
@@ -83,14 +77,13 @@ $(document).scroll(function(){
     }else{
         $("#nav-fifth").removeClass("active");
     }
-
-
-});
+});*/
+}
 
 
 $('.card').hover(
         function(e){
-        $(this).find(".profile-img").css({"opacity":0, 'background-color': 'black',  'transform':'rotateY(180deg)'});
+        $(this).find(".profile-img").css({"opacity":0.3, 'background-color': 'black',  'transform':'rotateY(180deg)'});
         $(this).find(".card-img-content").css({"opacity":1});
     },
     function(e){
@@ -98,3 +91,4 @@ $('.card').hover(
         $(this).find(".card-img-content").css({"opacity":0});
     }
 );
+
